@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Details Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card shadow rounded">
+      <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Customer Details Form</h4>
+      </div>
+      <div class="card-body">
+        <form method="POST" action="/predict">
+          <div class="row">
+
+            <!-- Education -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Education</label>
+              <select class="form-select" name="Education" required>
+                <option value="">Select</option>
+                <option value="PhD">PhD</option>
+                <option value="Master">Master</option>
+                <option value="2n cycle">2n cycle</option>
+                <option value="Graduation">Graduation</option>
+                <option value="Basic">Basic</option>
+              </select>
+            </div>
+
+            <!-- Marital Status -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Marital Status</label>
+              <select class="form-select" name="Marital Status" required>
+                <option value="">Select</option>
+                <option value="Single">Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Together">Together</option>
+                <option value="Widow">Widow</option>
+                <option value="Alone">Alone</option>
+                <option value="Absurd">Absurd</option>
+                <option value="YOLO">YOLO</option>
+              </select>
+            </div>
+
+            <!-- Income -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Income</label>
+              <input type="number" class="form-control" name="Income" required>
+            </div>
+
+            <!-- Recency -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Recency</label>
+              <input type="number" class="form-control" name="Recency" required>
+            </div>
+
+            <!-- Wines -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Wines Purchased in last 2 year</label>
+              <input type="number" class="form-control" name="Wines" required>
+            </div>
+
+            <!-- Fruits -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Fruits Purchased in last 2 year</label>
+              <input type="number" class="form-control" name="Fruits" required>
+            </div>
+
+            <!-- Meat -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Meat Purchased in last 2 year</label>
+              <input type="number" class="form-control" name="Meat" required>
+            </div>
+
+            <!-- Fish -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Fish Purchased in last 2 year</label>
+              <input type="number" class="form-control" name="Fish" required>
+            </div>
+
+            <!-- Sweets -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Sweets Purchased in last 2 year</label>
+              <input type="number" class="form-control" name="Sweets" required>
+            </div>
+
+            <!-- Gold -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Gold Purchased in last 2 year</label>
+              <input type="number" class="form-control" name="Gold" required>
+            </div>
+
+            <!-- Discount Purchases -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of purchases with a discount</label>
+              <input type="number" class="form-control" name="Discount Purchases" required>
+            </div>
+
+            <!-- Web -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of purchases through company website</label>
+              <input type="number" class="form-control" name="Web" required>
+            </div>
+
+            <!-- Catalog -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of Purchases using Catalog</label>
+              <input type="number" class="form-control" name="Catalog" required>
+            </div>
+
+            <!-- Store -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Number of purchases made directly in stores</label>
+              <input type="number" class="form-control" name="Store" required>
+            </div>
+
+            <!-- NumWebVisitsMonth -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Web Visits/Month</label>
+              <input type="number" class="form-control" name="NumWebVisitsMonth" required>
+            </div>
+
+            <!-- Age -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Age</label>
+              <input type="number" class="form-control" name="Age" required>
+            </div>
+
+            <!-- Children -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Children</label>
+              <input type="number" class="form-control" name="Children" required>
+            </div>
+
+            <!-- Total Spending -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Total Spending</label>
+              <input type="number" class="form-control" name="total_spend" required>
+            </div>
+
+            <!-- Total Promotion -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Total Promotion</label>
+              <input type="number" class="form-control" name="total_promo" required>
+            </div>
+
+            <!-- Parental Status -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Parental Status</label>
+              <select class="form-select" name="Parental_status" required>
+                <option value="">Select</option>
+                <option value="Parent">Parent</option>
+                <option value="Non-Parent">Non-Parent</option>
+              </select>
+            </div>
+
+            <!-- Days as Customer -->
+            <div class="col-md-6 mb-3">
+              <label class="form-label">Days as Customer</label>
+              <input type="number" class="form-control" name="Days_as_Customer" required>
+            </div>
+
+          </div>
+
+          <div class="mt-4 text-center">
+            <button type="submit" class="btn btn-success px-4">Predict Customer Cluster</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
